@@ -1,4 +1,4 @@
-*{
+html{
     background-color: #FFF9F7;
 }
 /* FONT */
@@ -77,8 +77,83 @@
 }
 
 /* CONTAINER 2*/
+.container2{
+    padding-left:50px;
+    padding-right: 50px;
+    grid-gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    width: 90%;
+    grid-template-areas:"graphic graphic ui apps photo photo"
+                        "graphic graphic illustration illustration motion motion"  ;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+}
+.container2_title_graphic{
+    grid-area: graphic;
+    background-color: #9A71F9;
+    color:white;
+    padding:10px;
+    font-size: 1vw;
+    font-family: "valera";
+    border-radius: 10px;
+    justify-content: start;
+}
+.container2_title_ui{
+    grid-area: ui;
+    background-color: #FF8750;
+    color:white;
+    padding:10px;
+    font-size: 1vw;
+    font-family: "valera";
+    border-radius: 10px;
+    justify-content: start;
+}
+.container2_title_apps{
+    grid-area: apps;
+    background-color: #ffa6d7;
+    color:white;
+    padding:10px;
+    font-size: 1vw;
+    font-family: "valera";
+    border-radius: 10px;
+    justify-content: start;
+}
+.container2_title_photo{
+    grid-area: photo;
+    background-color:  #9BF5D9;
+    color:white;
+    padding:10px;
+    font-size: 1vw;
+    font-family: "valera";
+    border-radius: 10px;
+    justify-content: start;
+}
+.container2_title_illustrations{
+    grid-area: illustration;
+    background-color: #FF938E;
+    color:white;
+    padding:10px;
+    font-size: 1vw;
+    font-family: "valera";
+    border-radius: 10px;
+    justify-content: start;
+}
+.container2_title_motions{
+    grid-area: motion;
+    background-color: #553345;
+    color:white;
+    padding:10px;
+    font-size: 1vw;
+    font-family: "valera";
+    border-radius: 10px;
+    justify-content: start;
+}
 
 /* CONTAINER 3*/
+
 .container3{
     margin-top: 50px;
     width: 100%;
