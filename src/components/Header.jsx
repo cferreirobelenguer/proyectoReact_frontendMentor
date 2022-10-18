@@ -7,9 +7,9 @@ const Header=()=>{
                 <img src={Camera} class="header-icon-icon" alt="header-icon"></img>
             </div>
             <div class="header-comunication">
-                <div class="header-comunication-container">
+                <button class="header-comunication-container">
                     freeComunication
-                </div>
+                </button>
             </div>
         </div>
     )
