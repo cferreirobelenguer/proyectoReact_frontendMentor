@@ -66,6 +66,7 @@ html{
     padding-left:100px;
     padding-right: 100px;
     text-align: center;
+    font-weight: bold;
     
 }
 .container-box{
@@ -172,21 +173,21 @@ html{
         
     }
 }
-@media (max-width: 510px) { /*mobile*/
+@media (max-width: 520px) { /*mobile*/
     .container2{
- 
+        
         grid-gap: 10vw;
         padding-top: 20px;
         padding-bottom: 20px;
         display: grid;
-        width: 80%;
+        width: 50%;
         grid-template-areas:"graphic graphic"
                             "ui apps"
                             "photo photo"
                             "illustration illustration"
                             "motion motion"  ;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        grid-template-columns: 90px;
+        grid-template-rows:[row1-start] 100px [row1-end] 100px [third-line] auto [last-line];
         
     }
 }
@@ -224,6 +225,7 @@ html{
     font-size: 2vw;
     font-family: "valera";
     text-align: center;
+    font-weight: bold;
 }
 .container3_text_subtitle{
     font-size: 1.5vw;
@@ -300,6 +302,7 @@ html{
     font-size: 3vw;
     font-family: "valera";
     text-align: center;
+    font-weight: bold;
 }
 .container4_subtitle{
     background-color: black;
@@ -337,6 +340,42 @@ html{
     
 }
 
+/*CONTAINER 5*/
+
+.container5{
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.container5_title{
+    font-family: "valera";
+    font-size:2vw;
+}
+.container5_imagenes{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.container5_mockup{
+    margin:5px;
+    width: 20vw;
+    height: 20vw;
+}
+.container5_mockup2{
+    margin:5px;
+    width: 20vw;
+    height: 20vw;
+}
+.container5_artwork{
+    margin:5px;
+    width: 20vw;
+    height: 20vw;
+}
 /*FOOTER*/
 
 .footer-container{
