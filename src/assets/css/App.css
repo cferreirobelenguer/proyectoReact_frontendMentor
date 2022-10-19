@@ -78,13 +78,14 @@ html{
 
 /* CONTAINER 2*/
 .container2{
+    margin:20px;
     padding-left:50px;
     padding-right: 50px;
-    grid-gap: 10px;
+    grid-gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: grid;
-    width: 90%;
+    width: 80vw;
     grid-template-areas:"graphic graphic ui apps photo photo"
                         "graphic graphic illustration illustration motion motion"  ;
     grid-template-columns: auto;
@@ -95,7 +96,7 @@ html{
     grid-area: graphic;
     background-color: #9A71F9;
     color:white;
-    padding:10px;
+    padding:60px;
     font-size: 1vw;
     font-family: "valera";
     border-radius: 10px;
@@ -105,7 +106,7 @@ html{
     grid-area: ui;
     background-color: #FF8750;
     color:white;
-    padding:10px;
+    padding:60px;
     font-size: 1vw;
     font-family: "valera";
     border-radius: 10px;
@@ -115,7 +116,7 @@ html{
     grid-area: apps;
     background-color: #ffa6d7;
     color:white;
-    padding:10px;
+    padding:60px;
     font-size: 1vw;
     font-family: "valera";
     border-radius: 10px;
@@ -125,7 +126,7 @@ html{
     grid-area: photo;
     background-color:  #9BF5D9;
     color:white;
-    padding:10px;
+    padding:60px;
     font-size: 1vw;
     font-family: "valera";
     border-radius: 10px;
@@ -135,7 +136,7 @@ html{
     grid-area: illustration;
     background-color: #FF938E;
     color:white;
-    padding:10px;
+    padding:60px;
     font-size: 1vw;
     font-family: "valera";
     border-radius: 10px;
@@ -145,11 +146,49 @@ html{
     grid-area: motion;
     background-color: #553345;
     color:white;
-    padding:10px;
+    padding:60px;
     font-size: 1vw;
     font-family: "valera";
     border-radius: 10px;
     justify-content: start;
+}
+@media (max-width: 900px) { /*tablet*/
+    .container2{
+        
+        padding-left:50px;
+        padding-right: 50px;
+        grid-gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        width: 80vw;
+        grid-template-areas:"graphic graphic"
+                            "ui apps"
+                            "photo photo"
+                            "illustration illustration"
+                            "motion motion"  ;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        
+    }
+}
+@media (max-width: 510px) { /*mobile*/
+    .container2{
+ 
+        grid-gap: 10vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        width: 80%;
+        grid-template-areas:"graphic graphic"
+                            "ui apps"
+                            "photo photo"
+                            "illustration illustration"
+                            "motion motion"  ;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        
+    }
 }
 
 /* CONTAINER 3*/
@@ -170,8 +209,8 @@ html{
 }
 .container3_photo{
     
-    width: 40vw;
-    height: 37vw;
+    width: 32vw;
+    height: 30vw;
     border-radius: 100%;
     
 }
